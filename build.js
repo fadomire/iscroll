@@ -65,6 +65,16 @@ var releases = {
 			'default/handleEvent.js',
 		],
 		postProcessing: [ 'wheel/build.json', 'snap/build.json', 'keys/build.json', 'infinite/build.json', 'probe/build.json' ]
+	},
+	custom: {
+		files: [
+			'zoom/zoom.js',
+			'wheel/wheel.js',
+			'probe/_animate.js',
+			'infinite/infinite.js',
+			'zoom/handleEvent.js',
+		],
+		postProcessing: [ 'zoom/build.json', 'wheel/build.json', 'infinite/build.json', 'probe/build.json']
 	}
 };
 
@@ -75,7 +85,7 @@ if ( !args.length ) {
 }
 
 if ( args[0] == 'dist' ) {
-	args = ['lite', 'iscroll', 'zoom', 'probe', 'infinite'];
+	args = ['lite', 'iscroll', 'zoom', 'probe', 'infinite', 'custom'];
 }
 
 // Get the list of files

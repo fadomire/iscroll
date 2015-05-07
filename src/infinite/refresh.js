@@ -1,6 +1,6 @@
 
-		this.scrollerWidth	= this.scroller.offsetWidth;
-		this.scrollerHeight	= this.scroller.offsetHeight;
+		this.scrollerWidth	= this.scale ? Math.round(this.scroller.offsetWidth * this.scale) : this.scroller.offsetWidth;
+		this.scrollerHeight	= this.scale ? Math.round(this.scroller.offsetHeight * this.scale) : this.scroller.offsetHeight;
 
 		this.maxScrollX		= this.wrapperWidth - this.scrollerWidth;
 		
